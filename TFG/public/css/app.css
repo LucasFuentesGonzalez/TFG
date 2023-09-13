@@ -1,0 +1,698 @@
+/* LAYOUT */
+html{
+    color: #333;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+main {
+    flex: 1 0 auto;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+
+/* Nav */
+header h2{
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+nav{
+    background-color: #333;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    padding: 0 2rem;
+    position: fixed;
+    top: 0;
+    z-index:10;
+}
+nav img{
+    width: 15rem;
+    padding-left: 0.8rem;
+    padding-bottom: 5px;
+}
+nav ul a{
+    font-size: 16px;
+}
+nav ul a:hover{
+    color: #FFB345;
+}
+.texto-amarillo{
+    color: #FFB345;
+}
+.nav-servicio:hover{
+    color: #FFB345;
+}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+    color: #FFB345;
+}
+
+
+
+/* Footer */
+footer{
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    padding: 20px 100px 20px 20%;
+}
+footer a{
+    color: white;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: #FFB345;
+}
+
+
+
+/* SECTION */
+section h3{
+    font-size: 1.5rem;
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.3rem;
+    font-weight:bold;
+}
+section h3 a{
+    color: #333;
+}
+section h3 span{
+    font-weight:normal;
+    color: #444;
+}
+article h4{
+    font-size: 1.5rem;
+}
+article .card-info{
+    position: relative;
+    bottom: 3rem;
+    left: 1.5rem;
+}
+.card.horizontal.small .card-image{
+    max-height: 70%;
+}
+.card.horizontal.small .card-image img{
+    margin-top: 20%;
+}
+.card.horizontal.noticia{
+    border: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+
+
+/* Slider */
+.carousel{
+    height: auto;
+}
+div.carousel-caption{
+    padding-bottom: 11%;
+    font-size: 40px;
+}
+
+
+
+/* Editar Entradilla */
+.entradilla{
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    margin: 50px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    margin: 0 0 50px 0;
+}
+.barra{
+    width: 300px;
+    height: 10px;
+    background-color: #FFB345;
+    border-radius: 10px;
+}
+
+
+
+/* Servicios */
+.servicio1{
+    width: 335px;
+    height: 280px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    background-image: url("../img/Foto_Vivienda.jpg");
+}
+.servicio1:hover{
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.servicio2{
+    width: 335px;
+    height: 280px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    background-image: url("../img/Foto_Oficina.jpg");
+}
+.servicio2:hover{
+     border: 1px solid rgba(0, 0, 0, 0.5);
+ }
+.servicio3{
+    width: 335px;
+    height: 280px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    background-image: url("../img/Foto_Local.jpg");
+}
+.servicio3:hover{
+    border: 0.1px solid rgba(0, 0, 0, 0.5);
+}
+.servicio-caja{
+    width: 110px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    padding: 5px 0px 0px 0px;
+    margin: 240px 180px 0 0;
+    border-radius: 2px;
+}
+
+
+
+/* ContactoInicio */
+.contacto{
+    padding: 80px 20% 80px 20%;
+    margin-top: 50px;
+}
+.contacto-1caja{
+    text-align: right;
+}
+.contacto-titu{
+    padding-top: 100px;
+    font-size: 40px;
+}
+.contacto-tex{
+    font-size: 16px;
+}
+.formulario-inicio{
+    background-color: #FFB345;
+    padding: 30px 55px 30px 45px;
+    border-radius: 4px;
+    width: 90%;
+    color: white;
+}
+
+
+
+/* Mas */
+.Mas{
+    width: 100%;
+    height: 400px;
+    background-image: url("../img/Mas.jpg");
+}
+.mas-caja{
+    text-align: center;
+    padding-top: 200px;
+}
+.mas-tex{
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+
+
+/* Apartado */
+.apartado-caja{
+    text-align: right;
+    margin-top: 50px;
+}
+.apartado-titu{
+    font-size: 40px;
+    color: #212529;
+    margin: 0;
+}
+.apartado-tex{
+    font-size: 16px;
+    color: #212529;
+}
+
+
+
+/* Acerca de */
+.padding{
+    padding: 30px 5% 40px 5%;
+}
+
+.preguntas{
+    margin: 10px 0 63px 0;
+}
+
+.subrayado{
+    background-color: #FFB345;
+    width: fit-content;
+    margin-top: 50px;
+    font-size: 25px;
+}
+.texto-acerca{
+    font-size: 16px;
+}
+
+
+
+/* Noticias */
+.noticias-raiz{
+    font-size: 20px;
+    margin: 30px 40px 0 40px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.3rem;
+    font-weight: bold;
+}
+.inline-block{
+    display: inline-block;
+    margin-left: 40px;
+}
+.card.horizontal.small{
+    width: 870px;
+    padding: 20px 30px 0px 30px;
+    margin-bottom: 20px;
+}
+.card.small {
+    height: 280px;
+}
+.imagen-carta{
+    border-radius: 2px;
+    width: 380px;
+    height: 230px;
+}
+.noticias-img{
+    margin-right: 15px;
+    filter: brightness(90%);
+ }
+.noticias-texto{
+    max-width: 420px;
+    min-width: 380px;
+    padding-top: 10px;
+}
+.noticias-titu{
+    font-size: 20px;
+    font-weight: 600;
+}
+.noticias-entra{
+    width: 350px;
+    font-size: 15px;
+    max-height: 115px;
+}
+.noticias-fecha{
+    font-size: 15px;
+}
+.noticias-mas{
+    font-size: 15px;
+    color: #ffab40;
+    text-transform: uppercase;
+}
+
+
+
+/* Noticia */
+.noticia-caja{
+    padding: 25px 55px 25px 55px;
+    margin-bottom: 55px;
+}
+.card{
+    padding: 5px;
+}
+.card .card-image img {
+    border-radius: 4px;
+}
+.imagen-noticia{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    filter: brightness(90%);
+}
+.noticia-titu{
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.noticia-texto{
+    padding-top: 30px;
+    width: 90%;
+    font-size: 15px;
+    margin: 0 auto;
+}
+
+
+
+/* Contacto */
+.caja-contacto{
+    padding: 30px 0px 100px 0px;
+}
+.contacto-amarillo{
+    font-size: 36px;
+    color: #FFB345;
+    font-weight: 700;
+    padding: 200px 0 0 70px;
+}
+.contacto-hablemos{
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 75px;
+    padding: 0 0 0 70px;
+}
+.contacto-formulario{
+    color: black;
+}
+.error{
+    color: #bb0707;
+    font-size: 13px;
+    font-weight: bold;
+}
+.form-group {
+    margin-bottom: 0rem;
+}
+
+
+/* Servicios */
+.servicios-filtro{
+    border: 1px solid #DCDCDC;
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: center;
+    margin: 10px;
+    font-weight: 500;
+}
+.servicios-filtro:hover{
+    border-color: #ffab40;
+    font-weight: 650;
+}
+.servicios-opcion{
+    font-size: 14px;
+    max-width: 100px;
+    margin: 0px;
+}
+.servicios-opcion:hover{
+    font-weight: 500;
+    color: #ffab40;
+}
+.servicios-ordenar{
+    font-size: 14px;
+    margin: 20px;
+}
+.servicios-ordenar:hover{
+    font-weight: 500;
+}
+.servicios-img{
+    width: 380px;
+    height: 230px;
+    border-radius: 2px;
+    padding-top: 7px;
+    filter: brightness(90%);
+}
+.servicios-texto{
+    font-size: 15px;
+    max-width: 420px;
+    min-width: 380px;
+    padding-top: 10px;
+}
+.servicios-titu{
+    font-size: 22px;
+}
+.servicios-precio{
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.servicios-iconos{
+    width: auto;
+    padding: 10px 0 10px 0;
+}
+.servicios-mas{
+    font-size: 15px;
+    color: #ffab40;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+/* Barra */
+.servicios-barra{
+    height:800px;
+    overflow:scroll;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+.servicios-barra::-webkit-scrollbar {
+    width: 20px;
+}
+.servicios-barra::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+    border-radius: 100px;
+}
+.servicios-barra::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background-image: linear-gradient(180deg, #d0368a 0%, #708ad4 99%);
+}
+/* Iconos */
+.fa-solid{
+    margin-right: 5px;
+}
+
+
+/* Servicio */
+.servicio-texto{
+    padding: 20px 20px 20px 0;
+    width: 1000px;
+    font-size: 15px;
+}
+.servicio-titu{
+    font-size: 40px;
+}
+.servicio-dis{
+
+}
+.servicio-precio{
+    font-size: 30px;
+    font-weight: 500;
+}
+.servicio-metro{
+    max-width: 100px;
+}
+.servicio-preciomes{
+    max-width: 100px;
+    margin: 0 40px;
+}
+.servicio-habs{
+    max-width: 100px;
+}
+.servicio-planta{
+    max-width: 100px;
+}
+.card .card-image {
+    position: relative;
+    margin-right: 20px;
+}
+
+/* Boostrap */
+
+
+/* Botones */
+/*Boton1*/
+.custom-btn-1 {
+    width: 130px;
+    height: 40px;
+    color: white;
+    border-radius: 4px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255, 255, 255, 0.1),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    background: rgb(255, 179, 69);
+    background: linear-gradient(0deg, rgb(255, 179, 69) 0%, rgb(255, 179, 69) 100%);
+    border: none;
+}
+.btn-1:hover {
+    box-shadow:  4px 4px 6px 0 rgba(255, 255, 255, 0.1),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.1),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.1),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+/*Boton2*/
+.custom-btn-2 {
+    width: 180px;
+    height: 40px;
+    color: white;
+    border-radius: 4px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255, 255, 255, 0.1),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    background: rgb(255, 179, 69);
+    background: linear-gradient(0deg, rgb(255, 179, 69) 0%, rgb(255, 179, 69) 100%);
+    border: none;
+}
+.btn-2:hover {
+    box-shadow:  4px 4px 6px 0 rgba(255, 255, 255, 0.1),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.1),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.1),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+/*Boton3*/
+.custom-btn-3 {
+    width: 130px;
+    height: 40px;
+    color: white;
+    border-radius: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.1),
+    7px 7px 20px 0px rgba(0, 0, 0, .1),
+    4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+    background: #212529;
+    background: linear-gradient(0deg, #181b1e 0%, #181b1e 100%);
+    border: none;
+}
+.btn-3:hover {
+    box-shadow:  4px 4px 6px 0 rgba(255, 255, 255, 0.1),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.1),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.1),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+/*Boton4*/
+.custom-btn-4 {
+    width: 200px;
+    height: 40px;
+    color: white;
+    border-radius: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.1),
+    7px 7px 20px 0px rgba(0, 0, 0, .1),
+    4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+    background: #212529;
+    background: linear-gradient(0deg, #181b1e 0%, #181b1e 100%);
+    border: none;
+}
+.btn-4:hover {
+    box-shadow:  4px 4px 6px 0 rgba(255, 255, 255, 0.1),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.1),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.1),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+/*Boton5*/
+.custom-btn-5 {
+                 width: 362px;
+                 height: 40px;
+                 color: black;
+                 border-radius: 10px;
+                 padding: 7px 37px 35px 37px;
+                 margin: 0 0 0 2px;
+                 font-size: 18px;
+                 font-weight: 500;
+                 cursor: pointer;
+                 transition: all 0.3s ease;
+                 position: relative;
+                 display: inline-block;
+                 box-shadow:inset 2px 2px 2px 0px rgba(255, 255, 255, 0.1),
+                 7px 7px 20px 0px rgba(0,0,0,.1),
+                 4px 4px 5px 0px rgba(0,0,0,.1);
+                 outline: none;
+                 background: rgb(255, 179, 69);
+                 background: linear-gradient(0deg, rgb(255, 179, 69) 0%, rgb(255, 179, 69) 100%);
+                 border: none;
+             }
+.btn-5:hover {
+    box-shadow:  4px 4px 6px 0 rgba(255, 255, 255, 0.1),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.1),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.1),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+/*Boton6*/
+.custom-btn-6 {
+    width: 180px;
+    height: 40px;
+    color: white;
+    border-radius: 20px;
+    padding: 0px 37px 0px 37px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255, 255, 255, 0.1),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    background: rgb(255, 179, 69);
+    background: linear-gradient(0deg, rgb(255, 179, 69) 0%, rgb(255, 179, 69) 100%);
+    border: none;
+}
+.btn-6:hover {
+    box-shadow:  4px 4px 6px 0 rgba(255, 255, 255, 0.1),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.1),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.1),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.1);
+}
+
+/*Boton7*/
+.custom-btn-7 {
+    width: 200px;
+    height: 40px;
+    color: #ffab40;
+    border-radius: 20px;
+    padding: 0px 37px 0px 37px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
+    border: 1px #ffab40 solid;
+}
+.btn-6:hover {
+    box-shadow:  4px 4px 6px 0 rgba(255, 255, 255, 0.1),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.1),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.1),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.1);
+}
